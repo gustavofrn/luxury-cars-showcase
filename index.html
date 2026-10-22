@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>FP Selection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>Carros De Alto Padrão</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Carros</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<div class="hero">
+
+  <div class="line"></div>
+
+  <!-- IMAGEM DO CARRO -->
+  <img id="car" src="assets/Porshe 911.png" class="car-img">
+
+  <!-- TEXTO -->
+  <div class="title">
+    <span id="year">2019</span>
+    <h1 id="name">Porsche</h1>
+    <p>Performance, luxo e tecnologia em um só carro.</p>
+
+    <!-- BOTÃO -->
+    <button onclick="toggleInfo()">SAIBA MAIS</button>
+
+    <!-- INFO BOX -->
+    <div id="infoBox" class="info-box">
+      <p><strong>🚀 Cavalos:</strong> <span id="hp"></span></p>
+      <p><strong>🎨 Cor:</strong> <span id="cor"></span></p>
+      <p><strong>💰 Valor:</strong> <span id="valor"></span></p>
+      <p><strong>📍 KM:</strong> <span id="km"></span></p>
+    </div>
+  </div>
+
+  <!-- BOTÕES -->
+  <div class="nav left" onclick="prev()">‹</div>
+  <div class="nav right" onclick="next()">›</div>
+
+  <!-- CONTADOR -->
+  <div class="count" id="count">01</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
