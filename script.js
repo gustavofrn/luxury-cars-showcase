@@ -19,7 +19,7 @@ const cars = [
   },
   {
     name: "Escalade",
-    img: "assets/Scaleide.png",
+    img: "assets/Cadillac Escalade Preto em Estúdio.png",
     year: "2023",
     hp: "420cv",
     cor: "Preto",
