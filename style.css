@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #000;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  color: white;
+  z-index: 10;
+}
+
+header nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #6a00ff, #a100ff);
+  position: relative;
+  overflow: hidden;
+}
+
+/* LINHA */
+.line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background: rgba(255,255,255,0.2);
+}
+
+/* CARRO */
+.car-img {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  width: 900px;
+  z-index: 2;
+  transition: 0.6s;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* TEXTO */
+.title {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 400px;
+}
+
+.title h1 {
+  font-size: 80px;
+  margin: 10px 0;
+}
+
+.title button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #00ffae;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* BOTÕES */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.left { left: 40px; }
+.right { right: 40px; }
+
+/* CONTADOR */
+.count {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* FLOAT */
+@keyframes float {
+  0% { transform: translate(-50%, -50%) rotate(-15deg) translateY(0); }
+  50% { transform: translate(-50%, -50%) rotate(-15deg) translateY(-25px); }
+  100% { transform: translate(-50%, -50%) rotate(-15deg) translateY(0); }
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 100;
+}
+
+.modal-box {
+  background: #111;
+  color: white;
+  width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.info p {
+  margin: 8px 0;
+}
+
+.info-box {
+  margin-top: 15px;
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+  transition: 0.3s;
+}
+
+.info-box p {
+  margin: 5px 0;
+  font-size: 14px;
+}
